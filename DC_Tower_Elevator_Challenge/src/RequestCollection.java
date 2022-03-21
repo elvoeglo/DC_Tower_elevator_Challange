@@ -18,9 +18,7 @@ public class RequestCollection {
 		if(request != null ) {
 			
 			Elevator e = ElevatorCollection.getFreeElevator(request);
-			
-			System.out.println(request.toString());
-			
+						
 			System.out.println("Elevator " + e.getElevatorNr() + " current floor: " + e.getCurrFloor() + ", destination: " + e.getDestination() + ", direction: " + e.getDirection(request));
 			
 			int waittime = Math.abs(request.floorFrom - request.floorTo);
@@ -29,7 +27,6 @@ public class RequestCollection {
 			e.setCurrFloor(e.getDestination());
 			e.setOccupied(false);
 			System.out.println("Elevator " + e.getElevatorNr() + " done with Request " + request.getRequestNr());
-			System.out.println(e.getCurrFloor());
 		}
 	}
 	
