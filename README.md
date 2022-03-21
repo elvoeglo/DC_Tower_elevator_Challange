@@ -1,4 +1,4 @@
-# DC_Tower_elevator_Challange
+# DC_Tower_Elevator_Challange
 
 My implementation of the DC Tower Coding Challenge for IBM.
 
